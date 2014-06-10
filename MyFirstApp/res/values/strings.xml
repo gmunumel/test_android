@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Name of my first app -->
+    <string name="app_name">MyFirstApp</string>
+
+    <!-- Edit message for user's input -->
+    <string name="edit_message">Enter a message.</string>
+
+    <!-- Message of Settings -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Message for the button to send -->
+    <string name="button_send">Send</string>
+
+    <!-- Title of the main activity -->
+    <string name="title_activity_main">MainActivity</string>
+    
+    <!-- Title of the display activity -->
+    <string name="title_activity_display_message">My Message</string>
+    
+    <!-- Title of Hello World -->
+    <string name="hello_world">Hello world!</string>
+
+</resources>
