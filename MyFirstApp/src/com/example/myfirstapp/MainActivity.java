@@ -3,6 +3,7 @@ package com.example.myfirstapp;
 import android.support.v7.app.ActionBarActivity;
 //import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,6 +18,11 @@ import android.widget.EditText;
 public class MainActivity extends ActionBarActivity {
 	
 	public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+	
+	ActionBar.Tab tab1, tab2, tab3;
+	Fragment fragmentTab1 = new FragmentTab1();
+	Fragment fragmentTab2 = new FragmentTab2();
+	Fragment fragmentTab3 = new FragmentTab3();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +33,26 @@ public class MainActivity extends ActionBarActivity {
 		//setContentView(R.layout.activity_main);
 		//setContentView(R.layout.activity_display_message);
 
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		//getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	    // If your minSdkVersion is 11 or higher, instead use:
 	    // getActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		// adding tabs
+		ActionBar actionBar = getActionBar();
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        
+        tab1 = actionBar.newTab().setText("1");
+        tab2 = actionBar.newTab().setText("2");
+        tab3 = actionBar.newTab().setText("3");
+        
+        tab1.setTabListener(new MyTabListener(fragmentTab1));
+        tab2.setTabListener(new MyTabListener(fragmentTab2));
+        tab3.setTabListener(new MyTabListener(fragmentTab3));
+        
+        actionBar.addTab(tab1);
+        actionBar.addTab(tab2);
+        actionBar.addTab(tab3);
+		
 		
 		if (savedInstanceState == null) {
 			 getSupportFragmentManager().beginTransaction()
