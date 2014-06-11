@@ -21,18 +21,21 @@ public class MainActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		setContentView(R.layout.activity_main);
+		 
 		//setContentView(R.layout.activity_main);
-		setContentView(R.layout.activity_display_message);
+		//setContentView(R.layout.activity_display_message);
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	    // If your minSdkVersion is 11 or higher, instead use:
 	    // getActionBar().setDisplayHomeAsUpEnabled(true);
-		/*
+		
 		if (savedInstanceState == null) {
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
-		*/
+			 getSupportFragmentManager().beginTransaction()
+ 					.add(R.id.container, new PlaceholderFragment()).commit();
+ 		}
+		
 	}
 
 	@Override
