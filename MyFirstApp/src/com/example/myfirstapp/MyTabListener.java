@@ -8,8 +8,8 @@ import android.app.FragmentTransaction;
 public class MyTabListener implements TabListener {
 	Fragment fragment;
 	
-	public MyTabListener(Fragment fragment) {
-		this.fragment = fragment;
+	public MyTabListener(Fragment fragmentTab1) {
+		this.fragment = fragmentTab1;
 	}
 	@Override
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {

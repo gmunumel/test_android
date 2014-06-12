@@ -19,10 +19,12 @@ public class MainActivity extends ActionBarActivity {
 	
 	public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 	
+	/*
 	ActionBar.Tab tab1, tab2, tab3;
 	Fragment fragmentTab1 = new FragmentTab1();
 	Fragment fragmentTab2 = new FragmentTab2();
 	Fragment fragmentTab3 = new FragmentTab3();
+	*/
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class MainActivity extends ActionBarActivity {
 	    // getActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		// adding tabs
+		/*
 		ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         
@@ -52,12 +55,14 @@ public class MainActivity extends ActionBarActivity {
         actionBar.addTab(tab1);
         actionBar.addTab(tab2);
         actionBar.addTab(tab3);
+		*/
 		
-		
+        
 		if (savedInstanceState == null) {
 			 getSupportFragmentManager().beginTransaction()
  					.add(R.id.container, new PlaceholderFragment()).commit();
  		}
+		
 		
 	}
 
