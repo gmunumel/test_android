@@ -25,12 +25,4 @@
     <!-- Title for the menu search -->
     <string name="action_search">Search</string>
     
-    <!-- Adding string to Tab One -->
-	<string name="One">One</string>
-	
-	<!-- Adding string to Tab Two -->
-	<string name="Two">Two</string>
-	
-	<!-- Adding string to Tab Three -->
-	<string name="Three">Three</string>
 </resources>

@@ -4,11 +4,7 @@
     <!-- the theme applied to the application or activity -->
     <style name="CustomActionBarTheme"
            parent="@style/Theme.AppCompat">
-        <item name="android:actionBarStyle">@style/MyActionBar</item>
-        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
         <item name="android:actionMenuTextColor">@color/actionbar_text</item>
-        <!-- Adding tabs :) -->
-        <item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>
         
         <!-- Adding overlaying -->
         <item name="android:windowActionBarOverlay">true</item>
@@ -25,18 +21,5 @@
     <style name="MyActionBarTitleText"
            parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/actionbar_text</item>
-    </style>
-
-    <!-- ActionBar tabs text styles -->
-    <style name="MyActionBarTabText"
-           parent="@style/Widget.AppCompat.ActionBar.TabText">
-        <item name="android:textColor">@color/actionbar_text</item>
-    </style>
-    
-    <!-- ActionBar tabs styles -->
-    <style name="MyActionBarTabs"
-           parent="@style/Widget.AppCompat.ActionBar.TabView">
-        <!-- tab indicator -->
-        <item name="android:background">@drawable/actionbar_tab_indicator</item>
     </style>
 </resources>
